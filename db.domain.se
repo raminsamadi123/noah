@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	domain.se. root.domain.se. (
+			      3		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+	IN	A	10.0.30.0
+;
+@	IN	NS	raminserver.domain.se.
+@	IN	A	10.0.30.0
+@	IN	AAAA	::1
+raminserver	IN	A	10.0.30.0
+test	IN	A	10.0.0.104
